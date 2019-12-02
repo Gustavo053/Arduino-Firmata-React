@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
       <nav className="navbar navbar-dark bg-primary navbar-expand-sm">
-        <a href="#" className="navbar-brand">
+        <Link to="/" className="navbar-brand">
           <img src="./ruby2.png" width="30"></img>
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           data-toggle="collapse"
@@ -17,9 +18,14 @@ function Header() {
         <div className="collapse navbar-collapse" id="webmenu">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <Link to="/" className="nav-link">
+                Página Inicial
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/instalacao" className="nav-link">
                 Instalação
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a href="#" className="nav-link">
