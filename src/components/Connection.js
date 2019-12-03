@@ -7,13 +7,13 @@ function Connection() {
         <div className="col-md-4">
           <h1 className="my-4 text-sm-left">Arduino</h1>
           <div className="text-sm-left">
-            <img className="img-fluid" src="./arduino.png" width="50%" alt="" />
+            <img className="img-fluid" src="./images/arduino.png" width="50%" alt="" />
           </div>
         </div>
         <div className="col-md-4">
           <h1 className="my-4 text-sm-center">Firmata</h1>
           <div className="text-sm-center">
-            <img className="img-fluid" src="./firmata.png" width="50%" alt="" />
+            <img className="img-fluid" src="./images/firmata.png" width="50%" alt="" />
           </div>
         </div>
         <div className="col-md-4">
@@ -21,7 +21,7 @@ function Connection() {
           <div className="text-sm-right">
             <img
               className="img-fluid"
-              src="./ruby.png"
+              src="./images/ruby.png"
               width="41%"
               alt=""
             ></img>
@@ -69,7 +69,7 @@ function Connection() {
         <h3 className="my-3">Realizando a conexão do ruby e o arduino</h3>
         <ol>
           <li>Monte esse circuito:</li>
-          <img className="img-fluid" src="./BlinkLed2.png" width="70%" />
+          <img className="img-fluid" src="./images/BlinkLed2.PNG" width="70%" />
           <li>
             Abra o terminal e insira o comando:{" "}
             <strong>gort scan serial</strong>
@@ -83,13 +83,13 @@ function Connection() {
             <strong>blink_led.rb</strong>, por exemplo.
           </li>
           <li>Insira o seguinte código:</li>
-          <img className="img-fluid" src="./codigo.png" width="100%" />
+          <img className="img-fluid" src="./images/codigo.PNG" width="100%" />
           <li>
             Abra o terminal do VS Code e execute o código:{" "}
             <strong>ruby blink_led.rb</strong>
           </li>
           <li>Veja o resultado: </li>
-          <img className="img-fluid" src="./BlinkLed.gif" width="70%" />
+          <img className="img-fluid" src="./images/BlinkLed.gif" width="70%" />
         </ol>
         <p>
           Pronto! A conexão do ruby com o arduino através do framework foi

@@ -7,13 +7,13 @@ function Installation() {
         <div className="col-md-4">
           <h1 className="my-4 text-sm-left">Arduino</h1>
           <div className="text-sm-left">
-            <img className="img-fluid" src="./arduino.png" width="50%" alt="" />
+            <img className="img-fluid" src="./images/arduino.png" width="50%" alt="" />
           </div>
         </div>
         <div className="col-md-4">
           <h1 className="my-4 text-sm-center">Firmata</h1>
           <div className="text-sm-center">
-            <img className="img-fluid" src="./firmata.png" width="50%" alt="" />
+            <img className="img-fluid" src="./images/firmata.png" width="50%" alt="" />
           </div>
         </div>
         <div className="col-md-4">
@@ -21,7 +21,7 @@ function Installation() {
           <div className="text-sm-right">
             <img
               className="img-fluid"
-              src="./ruby.png"
+              src="./images/ruby.png"
               width="41%"
               alt=""
             ></img>
@@ -33,7 +33,7 @@ function Installation() {
         <div className="col-md-12">
           <h1 className="my-4 text-sm-center">Atenção!</h1>
           <div className="text-sm-center">
-            <img className="img-fluid" src="./warning.png" width="11%" />
+            <img className="img-fluid" src="./images/warning.png" width="11%" />
           </div>
           <h4 className="my-2 text-sm-left">
             É importante você ter algumas coisas já instaladas para
@@ -60,7 +60,7 @@ function Installation() {
         <div className="col-md-12">
           <h1 className="my-4 text-sm-center">Instalação do Ruby</h1>
           <div className="text-sm-center">
-            <img className="img-fluid" src="./ruby.png" width="10%" alt="" />
+            <img className="img-fluid" src="./images/ruby.png" width="10%" alt="" />
           </div>
           <h4 className="my-3 text-sm-left">
             Siga esses simples passo a passo e você terá o ruby na sua máquina:
@@ -87,7 +87,7 @@ function Installation() {
         <div className="col-md-12">
           <h1 className="my-4 text-sm-center">Instalação da IDE Arduino</h1>
           <div className="text-sm-center">
-            <img className="img-fluid" src="./firmata.png" width="13%" alt="" />
+            <img className="img-fluid" src="./images/firmata.png" width="13%" alt="" />
           </div>
           <h4 className="my-3 text-sm-left">
             Siga esses simples passo a passo e você terá a IDE Arduino na sua
@@ -116,7 +116,7 @@ function Installation() {
           <div className="text-sm-center">
             <img
               className="img-fluid"
-              src="./rubygems.png"
+              src="./images/rubygems.png"
               width="11%"
               alt=""
             />
@@ -161,7 +161,7 @@ function Installation() {
             Configurando o ambiente de desenvolvimento
           </h1>
           <div className="text-sm-center">
-            <img className="img-fluid" src="./vscode.png" width="11%" alt="" />
+            <img className="img-fluid" src="./images/vscode.png" width="11%" alt="" />
           </div>
           <h4 className="my-3 text-sm-left">
             Siga esses simples passos e você terá o seu ambiente instalado e
@@ -204,7 +204,7 @@ function Installation() {
           <strong>ruby.</strong>
         </li>
       </ol>
-      <img className="img-fluid" src="./installationVS.png" width="100%" />
+      <img className="img-fluid" src="./images/installationVS.PNG" width="100%" />
       <p>
         Agora basta instalar essa extensão e pronto, o seu ambiente está
         configurado para codificar na lingaugem <strong>ruby.</strong>

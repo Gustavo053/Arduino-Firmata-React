@@ -7,13 +7,13 @@ function Examples() {
         <div className="col-md-4">
           <h1 className="my-4 text-sm-left">Arduino</h1>
           <div className="text-sm-left">
-            <img className="img-fluid" src="./arduino.png" width="50%" alt="" />
+            <img className="img-fluid" src="./images/arduino.png" width="50%" alt="" />
           </div>
         </div>
         <div className="col-md-4">
           <h1 className="my-4 text-sm-center">Firmata</h1>
           <div className="text-sm-center">
-            <img className="img-fluid" src="./firmata.png" width="50%" alt="" />
+            <img className="img-fluid" src="./images/firmata.png" width="50%" alt="" />
           </div>
         </div>
         <div className="col-md-4">
@@ -21,7 +21,7 @@ function Examples() {
           <div className="text-sm-right">
             <img
               className="img-fluid"
-              src="./ruby.png"
+              src="./images/ruby.png"
               width="41%"
               alt=""
             ></img>
@@ -35,7 +35,7 @@ function Examples() {
             Exemplos de códigos para você executar e enviar para o arduino
           </h3>
           <h4 className="my-2 text-sm-left">Fazer um led piscar:</h4>
-          <img className="img-fluid" src="./codigo.png" width="50%" />
+          <img className="img-fluid" src="./images/codigo.PNG" width="50%" />
           <p>
             <strong>Explicação do código:</strong> Primeiramente, é importado a
             biblioteca 'rubygems' e 'arduino_firmata'. Após isso, é feito a
@@ -49,7 +49,7 @@ function Examples() {
           <h4 className="my-2 text-sm-left">
             Acender um led pressionando um botão:
           </h4>
-          <img className="img-fluid" src="./codigo2.png" width="50%" />
+          <img className="img-fluid" src="./images/codigo2.PNG" width="50%" />
           <p>
             <strong>Explicação do código:</strong> Primeiramente, é importado a
             biblioteca 'rubygems' e 'arduino_firmata'. Após isso, é feito a
@@ -65,7 +65,7 @@ function Examples() {
           <h4 className="my-2 text-sm-left">
             Controlar o brilho do led através de um potenciômetro:
           </h4>
-          <img className="img-fluid" src="./codigo3.png" width="50%" />
+          <img className="img-fluid" src="./images/codigo3.PNG" width="50%" />
           <p>
             <strong>Explicação do código:</strong> Primeiramente, é importado a
             biblioteca 'rubygems' e 'arduino_firmata'. Após isso, é feito a

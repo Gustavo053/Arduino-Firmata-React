@@ -6,7 +6,7 @@ function Header() {
     <header>
       <nav className="navbar navbar-dark bg-primary navbar-expand-sm">
         <Link to="/" className="navbar-brand">
-          <img src="./ruby2.png" width="30"></img>
+          <img src="./images/ruby2.png" width="30"></img>
         </Link>
         <button
           className="navbar-toggler"
