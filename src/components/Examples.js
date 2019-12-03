@@ -7,13 +7,23 @@ function Examples() {
         <div className="col-md-4">
           <h1 className="my-4 text-sm-left">Arduino</h1>
           <div className="text-sm-left">
-            <img className="img-fluid" src="./images/arduino.png" width="50%" alt="" />
+            <img
+              className="img-fluid"
+              src="./images/arduino.png"
+              width="50%"
+              alt=""
+            />
           </div>
         </div>
         <div className="col-md-4">
           <h1 className="my-4 text-sm-center">Firmata</h1>
           <div className="text-sm-center">
-            <img className="img-fluid" src="./images/firmata.png" width="50%" alt="" />
+            <img
+              className="img-fluid"
+              src="./images/firmata.png"
+              width="50%"
+              alt=""
+            />
           </div>
         </div>
         <div className="col-md-4">
