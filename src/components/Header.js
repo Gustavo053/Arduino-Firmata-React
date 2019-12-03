@@ -28,14 +28,14 @@ function Header() {
               </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <Link to="/conexao" className="nav-link">
                 Conexão
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <Link to="exemplos" className="nav-link">
                 Exemplos
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

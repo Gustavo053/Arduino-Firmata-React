@@ -4,6 +4,32 @@ function Installation() {
   return (
     <div className="container">
       <div className="row">
+        <div className="col-md-4">
+          <h1 className="my-4 text-sm-left">Arduino</h1>
+          <div className="text-sm-left">
+            <img className="img-fluid" src="./arduino.png" width="50%" alt="" />
+          </div>
+        </div>
+        <div className="col-md-4">
+          <h1 className="my-4 text-sm-center">Firmata</h1>
+          <div className="text-sm-center">
+            <img className="img-fluid" src="./firmata.png" width="50%" alt="" />
+          </div>
+        </div>
+        <div className="col-md-4">
+          <h1 className="my-4 text-sm-right">Ruby</h1>
+          <div className="text-sm-right">
+            <img
+              className="img-fluid"
+              src="./ruby.png"
+              width="41%"
+              alt=""
+            ></img>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div className="row">
         <div className="col-md-12">
           <h1 className="my-4 text-sm-center">Atenção!</h1>
           <div className="text-sm-center">
