@@ -42,25 +42,28 @@ function Installation() {
       <div className="row">
         <div className="col-md-12">
           <h1 className="my-4 text-sm-center">Atenção!</h1>
-          <div className="text-sm-center">
-            <img className="img-fluid" src="./images/warning.png" width="11%" />
-          </div>
           <h4 className="my-2 text-sm-left">
             É importante você ter algumas coisas já instaladas para
             continuarmos:
           </h4>
           <ul>
             <li>
-              Instale o gort: <strong>sudo apt install gort</strong>
+              Instale o gort:{" "}
+              <a
+                target="_blank"
+                href="https://gort.io/documentation/getting_started/downloads/"
+              >
+                https://gort.io/documentation/getting_started/downloads/
+              </a>
             </li>
             <li>
               Instale o gem: <strong>sudo apt install gem</strong>
             </li>
             <li>
-              Atualize os pacotes: <strong>sudo gem install update</strong>
+              Atualize os pacotes: <strong>sudo apt update</strong>
             </li>
             <li>
-              Atualize os diretórios: <strong>sudo gem install upgrade</strong>
+              Atualize os diretórios: <strong>sudo apt upgrade</strong>
             </li>
           </ul>
         </div>

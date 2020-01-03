@@ -99,7 +99,55 @@ function Connection() {
               <strong>blink_led.rb</strong>, por exemplo.
             </li>
             <li>Insira o seguinte código:</li>
-            <img className="img-fluid" src="./images/codigo.PNG" width="100%" />
+            <table className="table-active">
+              <tbody>
+                <tr>
+                  <td>
+                    <div>
+                      <code>require 'rubygems'</code>
+                    </div>
+                    <div>
+                      <code>require 'arduino_firmata'</code>
+                    </div>
+                    <br />
+                    <div>
+                      <code>
+                        arduino = ArduinoFirmata.connect "/dev/ttyUSB0"
+                      </code>
+                    </div>
+                    <br />
+                    <div>
+                      <code>#ACENDER E DESLIGAR O LED</code>
+                    </div>
+                    <br />
+                    <div>
+                      <code>arduino.pin_mode 10, ArduinoFirmata::OUTPUT</code>
+                    </div>
+                    <div>
+                      <code>stat = true</code>
+                    </div>
+                    <div>
+                      <code>loop do</code>
+                    </div>
+                    <div>
+                      <code>puts stat</code>
+                    </div>
+                    <div>
+                      <code>arduino.digital_write 10, stat</code>
+                    </div>
+                    <div>
+                      <code>stat = !stat</code>
+                    </div>
+                    <div>
+                      <code>sleep 1</code>
+                    </div>
+                    <div>
+                      <code>end</code>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
             <li>
               Abra o terminal do VS Code e execute o código:{" "}
               <strong>ruby blink_led.rb</strong>

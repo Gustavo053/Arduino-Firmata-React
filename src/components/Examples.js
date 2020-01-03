@@ -45,27 +45,124 @@ function Examples() {
             Exemplos de códigos para você executar e enviar para o arduino
           </h3>
           <h4 className="my-2 text-sm-left">Fazer um led piscar:</h4>
-          <img className="img-fluid" src="./images/codigo.PNG" width="50%" />
+          <table className="table-active">
+            <tbody>
+              <tr>
+                <td>
+                  <div>
+                    <code>require 'rubygems'</code>
+                  </div>
+                  <div>
+                    <code>require 'arduino_firmata'</code>
+                  </div>
+                  <br />
+                  <div>
+                    <code>arduino = ArduinoFirmata.connect "/dev/ttyUSB0"</code>
+                  </div>
+                  <br />
+                  <div>
+                    <code>#ACENDER E DESLIGAR O LED</code>
+                  </div>
+                  <br />
+                  <div>
+                    <code>arduino.pin_mode 2, ArduinoFirmata::OUTPUT</code>
+                  </div>
+                  <div>
+                    <code>stat = true</code>
+                  </div>
+                  <div>
+                    <code>loop do</code>
+                  </div>
+                  <div>
+                    <code>puts stat</code>
+                  </div>
+                  <div>
+                    <code>arduino.digital_write 2, stat</code>
+                  </div>
+                  <div>
+                    <code>stat = !stat</code>
+                  </div>
+                  <div>
+                    <code>sleep 1</code>
+                  </div>
+                  <div>
+                    <code>end</code>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
           <p>
             <strong>Explicação do código:</strong> Primeiramente, é importado a
             biblioteca 'rubygems' e 'arduino_firmata'. Após isso, é feito a
-            conexão do arduino através da porta <strong>ttyUSB0</strong>. É
-            printado no terminal a versão do firmata. Logo em seguida é
-            declarado que o pino 2 do arduino, irá ser um pino de{" "}
-            <strong>saída.</strong> Então, uma variável state é declarada para
-            assumir o estado do led(HIGH or LOW). O programa entra no loop que
-            fica trocando o estado do led a cada 1 segundo.
+            conexão do arduino através da porta <strong>ttyUSB0</strong>. Logo
+            em seguida é declarado que o pino 2 do arduino, irá ser um pino de{" "}
+            <strong>saída.</strong> Então, uma variável state é declarada e
+            inicializada para assumir o estado do led(HIGH or LOW). O programa
+            entra no loop que fica trocando o estado do led a cada 1 segundo.
           </p>
           <h4 className="my-2 text-sm-left">
             Acender um led pressionando um botão:
           </h4>
-          <img className="img-fluid" src="./images/codigo2.PNG" width="50%" />
+          <table className="table-active">
+            <tbody>
+              <tr>
+                <td>
+                  <div>
+                    <code>require 'rubygems'</code>
+                  </div>
+                  <div>
+                    <code>require 'arduino_firmata'</code>
+                  </div>
+                  <br />
+                  <div>
+                    <code>arduino = ArduinoFirmata.connect "/dev/ttyUSB0"</code>
+                  </div>
+                  <br />
+                  <div>
+                    <code>#ACENDER E DESLIGAR O LED COM BOTÃO</code>
+                  </div>
+                  <br />
+                  <div>
+                    <code>arduino.pin_mode 7, ArduinoFirmata::INPUT</code>
+                  </div>
+                  <div>
+                    <code>arduino.pin_mode 2, ArduinoFirmata::OUTPUT</code>
+                  </div>
+                  <br />
+                  <div>
+                    <code>loop do</code>
+                  </div>
+                  <div>
+                    <code>if arduino.digital_read 7</code>
+                  </div>
+                  <div>
+                    <code>arduino.digital_write 2, true</code>
+                  </div>
+                  <div>
+                    <code>else</code>
+                  </div>
+                  <div>
+                    <code>arduino.digital_write 2, false</code>
+                  </div>
+                  <div>
+                    <code>end</code>
+                  </div>
+                  <div>
+                    <code>sleep 0.5</code>
+                  </div>
+                  <div>
+                    <code>end</code>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
           <p>
             <strong>Explicação do código:</strong> Primeiramente, é importado a
             biblioteca 'rubygems' e 'arduino_firmata'. Após isso, é feito a
-            conexão do arduino através da porta <strong>ttyUSB0</strong>. É
-            printado no terminal a versão do firmata. Logo em seguida, é
-            declarado que o pino 7 do arduino irá ser um pino de{" "}
+            conexão do arduino através da porta <strong>ttyUSB0</strong>. Logo
+            em seguida, é declarado que o pino 7 do arduino irá ser um pino de{" "}
             <strong>entrada</strong> e o pino 2 irá ser um de{" "}
             <strong>saída.</strong> Então o programa entra em um loop, onde a
             condição que testa se o botão foi apertado é verificada. Se ela
@@ -75,17 +172,65 @@ function Examples() {
           <h4 className="my-2 text-sm-left">
             Controlar o brilho do led através de um potenciômetro:
           </h4>
-          <img className="img-fluid" src="./images/codigo3.PNG" width="50%" />
+          <table className="table-active">
+            <tbody>
+              <tr>
+                <td>
+                  <div>
+                    <code>require 'rubygems'</code>
+                  </div>
+                  <div>
+                    <code>require 'arduino_firmata'</code>
+                  </div>
+                  <br />
+                  <div>
+                    <code>arduino = ArduinoFirmata.connect "/dev/ttyUSB0"</code>
+                  </div>
+                  <br />
+                  <div>
+                    <code>
+                      #LIGAR O LED E AJUSTAR O SEU BRILHO COM O POTENCIÔMETRO
+                    </code>
+                  </div>
+                  <br />
+                  <div>
+                    <code>loop do</code>
+                  </div>
+                  <div>
+                    <code>
+                      an = arduino.analog_read 0 #Retorna entre 0 e 1023
+                      (10bist)
+                    </code>
+                  </div>
+                  <div>
+                    <code>puts an</code>
+                  </div>
+                  <div>
+                    <code>
+                      arduino.analog_write 10, an/4 #Ajusta para a escala de 0 a
+                      255 (8bits) do pwm
+                    </code>
+                  </div>
+                  <div>
+                    <code>sleep 0.1</code>
+                  </div>
+                  <div>
+                    <code>end</code>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
           <p>
             <strong>Explicação do código:</strong> Primeiramente, é importado a
             biblioteca 'rubygems' e 'arduino_firmata'. Após isso, é feito a
-            conexão do arduino através da porta <strong>ttyUSB0</strong>. É
-            printado no terminal a versão do firmata. Então o programa entra em
-            um loop, onde uma variável que recebe o valor de acordo com a
-            movimentação do eixo do potenciômetro é printada no terminal a cada
-            0.1s. No pino 10, onde o led está ligado, é aceso o led com o valor
-            ajustado para uma escala de <strong>8 bits</strong>, visto que o
-            valor recebido está em uma escala de <strong>10 bits.</strong>
+            conexão do arduino através da porta <strong>ttyUSB0</strong>. Então
+            o programa entra em um loop, onde uma variável que recebe o valor de
+            acordo com a movimentação do eixo do potenciômetro é printada no
+            terminal a cada 0.1s. No pino 10, onde o led está ligado, é aceso o
+            led com o valor ajustado para uma escala de <strong>8 bits</strong>,
+            visto que o valor recebido está em uma escala de{" "}
+            <strong>10 bits.</strong>
           </p>
           <h4>Gostou desses exemplos?</h4>
           <p>
